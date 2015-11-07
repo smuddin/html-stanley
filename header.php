@@ -24,7 +24,7 @@
 
         <ul class="nav">
             <li>
-                <a href="single.php">About Stanley</a>
+                <a href="page-single.php">About Stanley</a>
                 <ul>
                     <li class="fstLi"><a href="#">About Stanley Link 1</a></li>
                     <li><a href="#">About Stanley Link 2</a></li>
@@ -49,7 +49,7 @@
                 </ul>
             </li>
             <li>
-                <a href="sidebar.php">contact&nbsp;stanley</a>
+                <a href="page-sidebar.php">contact&nbsp;stanley</a>
             </li>
         </ul><!-- End of nav -->
 
