@@ -2,7 +2,7 @@
 
 
     <section class="banner">
-        <img src="images/banner-home.png" alt="" />
+        <img src="images/banner-home.gif" alt="" />
     </section>
     <!-- End of banner -->
 
