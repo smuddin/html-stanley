@@ -1,9 +1,9 @@
 <?php include_once('header.php'); ?>
 
 
-    <section class="banner">
+    <div class="banner">
         <img src="images/banner-page.gif" alt="" />
-    </section>
+    </div>
     <!-- End of banner -->
 
 

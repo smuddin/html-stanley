@@ -69,7 +69,7 @@ body {
 #wrap {
   position: relative;
   left: 0;
-  top: 0px;
+  top: 0;
   z-index: 99999;
 }
 #wrap #wrap-inner {
@@ -279,7 +279,7 @@ ul.nav li li, ul.nav li.selected li {
   border-bottom: 1px solid #dddddd;
   margin-right: 0;
 }
-ul.nav li li.fstLi {
+ul.nav li li:first-child {
   border-top: 1px solid #dddddd;
 }
 ul.nav li li a, ul.nav li.selected li a {
