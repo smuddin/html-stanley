@@ -123,7 +123,7 @@ body {
 #wrap {
   position: relative;
   left: 0;
-  top:0px;
+  top: 0;
   z-index: 99999;
 
   #wrap-inner {
@@ -357,7 +357,7 @@ ul.nav {
       border-bottom: 1px solid $color-border;
       margin-right: 0;
     }
-    li.fstLi {
+    li:first-child {
       border-top: 1px solid $color-border
     }
 

@@ -44,15 +44,15 @@
             <li>
                 <a href="javascript:void(0);">About Stanley</a>
                 <ul>
-                    <li class="fstLi"><a href="#">About Stanley Link 1</a></li>
+                    <li><a href="#">About Stanley Link 1</a></li>
                     <li><a href="#">About Stanley Link 2</a></li>
-                    <a href="page-sidebar.php">contact&nbsp;stanley</a>          <li><a href="#">About Stanley Link 3</a></li>
+                    <li><a href="#">About Stanley Link 3</a></li>
                 </ul>
             </li>
             <li class="nav2">
                 <a href="javascript:void(0);">Practice Areas</a>
                 <ul>
-                    <li class="fstLi"><a href="#">Some Link 1</a></li>
+                    <li><a href="#">Some Link 1</a></li>
                     <li><a href="#">Another Link 2</a></li>
                     <li><a href="#">Highlight Link</a></li>
                     <li><a href="#">Another Link With Stuff</a></li>
