@@ -6,10 +6,10 @@
     </section>
     <!-- End of banner -->
 
-    
-    <section class="page layout-sidebar"><div class="inner">
 
-        <div class="story">
+    <section class="container page"><div class="inner">
+
+        <article class="content-box col-main">
 
             <h3>About Stanley</h3>
             
@@ -31,29 +31,34 @@
                 fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong>
                 nisi ut aliquip ex ea commodo consequat.</p>
 
-        </div><!-- End of story -->
-        
-        <div class="contact">
-            <h3>contact us now</h3>
-            <p>Please enter your details below and we will promtly return your inquiry:</p>
-            
-            <form action="#" class="contact-form">
-                <input type="text" value="" placeholder="Your Name" />
-                <input type="email" value="" placeholder="Email" />
-                <input type="tel" value="" placeholder="Telephone" />
+        </article><!-- End of content-box -->
 
-                <textarea cols="5" rows="5" placeholder="How can we help you?"></textarea>
-                <input type="button" value="Submit Form" />
-            </form><!-- End of contact-form -->
-            
-            <small class="notice">
-                We take privacy very seriously. Your<br />
-                information is safe &amp; confidential with us.
-            </small>
 
-        </div><!-- End of contact -->
+        <aside class="content-box col-aside">
 
-    </div></section><!-- End of main -->
+            <div class="contact">
+                <h3>contact us now</h3>
+                <p>Please enter your details below and we will promtly return your inquiry:</p>
+
+                <form action="#" class="contact-form">
+                    <input type="text" value="" placeholder="Your Name" />
+                    <input type="email" value="" placeholder="Email" />
+                    <input type="tel" value="" placeholder="Telephone" />
+
+                    <textarea cols="5" rows="5" placeholder="How can we help you?"></textarea>
+                    <input type="button" value="Submit Form" />
+                </form><!-- End of contact-form -->
+
+                <small class="notice">
+                    We take privacy very seriously. Your<br />
+                    information is safe &amp; confidential with us.
+                </small>
+             </div>
+
+        </aside><!-- End of content-box -->
+
+
+    </div></section><!-- End of container -->
 
 
 <?php include_once('footer.php'); ?>

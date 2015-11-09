@@ -1,12 +1,43 @@
-/*======= variables ============*/
-/*======= Reset ============*/
-* {
+@import url(//fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+/*
+ * Reset
+ *****************************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-img, fieldset {
-  border: 0;
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+a img, fieldset {
+  border: none;
 }
 
 a {
@@ -16,20 +47,127 @@ a:hover {
   text-decoration: underline;
 }
 
-ul {
-  list-style: none;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+nav, section, summary {
+  display: block;
 }
 
-/*======= styles ============*/
+/*
+ * Common Styles and Structure
+ *****************************************************************************/
 body {
+  padding-bottom: 35px;
   font: 14px "Open Sans", "Lucida Grande", Arial, Helvetica, sans-serif;
   color: #2c2c2c;
   background-image: url("images/body-bg.gif");
-  padding-bottom: 35px;
-  text-align: center;
 }
 
-/*========header==========*/
+#wrap {
+  position: relative;
+  left: 0;
+  top: 0px;
+  z-index: 99999;
+}
+#wrap #wrap-inner {
+  height: 100%;
+  z-index: 9999;
+}
+
+#slidingMenu {
+  display: block;
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  visibility: hidden;
+  /* to block user interaction on wp7 (z-index wont work) */
+  background-image: url("images/body-bg.gif");
+}
+
+#slidingMenuContent {
+  background: #ffffff;
+}
+#slidingMenuContent ul li {
+  border: 1px solid #dddddd;
+}
+#slidingMenuContent ul li a {
+  padding: 10px;
+  display: block;
+}
+
+article p:last-child, div p:last-child {
+  padding-bottom: 0 !important;
+}
+
+.container {
+  width: 962px;
+}
+.container h3 {
+  padding-bottom: 14px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #666666;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+}
+
+.page {
+  margin: 25px auto 0;
+}
+
+.inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content-box {
+  padding: 27px 2% 27px;
+  border: 1px solid #dddddd;
+  border-top: none;
+  background: url("images/content-box-bg.gif") top left repeat-x #ffffff;
+}
+.content-box p {
+  line-height: 22px;
+  padding-bottom: 22px;
+}
+.content-box p strong {
+  color: #7b2222;
+}
+
+.col-full {
+  width: 95.5%;
+}
+
+.col-main {
+  width: 589px;
+  float: left;
+}
+
+.col-aside {
+  float: right;
+  width: 270px;
+}
+
+.col-onethird {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+}
+.col-onethird .content-box {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.col-onethird:last-child {
+  margin-right: 0;
+}
+
+/*
+ * Header
+ *****************************************************************************/
 header {
   width: 100%;
   background: #ffffff;
@@ -40,15 +178,30 @@ header .inner {
   margin: 0 auto;
   position: relative;
   text-align: left;
+  overflow: visible;
+}
+header .show-menu-button {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 22px;
+  margin-top: 30px;
+  margin-left: 11px;
+  background: url("images/icon-show-menu.png") no-repeat;
+  display: none;
+  visibility: hidden;
 }
 header #logo {
   width: 236px;
   height: 40px;
   position: absolute;
-  left: 369px;
-  top: 29px;
+  left: 37.89%;
+  top: 39%;
 }
 
+/*
+ * Navigation
+ *****************************************************************************/
 ul.nav {
   width: 930px;
   height: 34px;
@@ -59,7 +212,9 @@ ul.nav li {
   float: left;
   margin-right: 38px;
   position: relative;
-  /*-----sub-navigation-----*/
+  /*
+   * Sub Navigation
+   *************************************************************************/
 }
 ul.nav li a {
   float: left;
@@ -83,7 +238,7 @@ ul.nav li ul {
   padding: 23px 10px 11px;
   border-bottom: 1px solid #dddddd;
   border-top: none;
-  background: #ffffff url(images/sub-nav-bg.gif) no-repeat;
+  background: url("images/sub-nav-bg.gif") no-repeat #ffffff;
   overflow: hidden;
   position: absolute;
   left: -43px;
@@ -115,7 +270,9 @@ ul.nav li li a:hover, ul.nav li.selected li a:hover {
   color: #7b2222;
 }
 
-/*------- banner --------*/
+/*
+ * Banner
+ *****************************************************************************/
 section.banner {
   width: 100%;
 }
@@ -124,15 +281,16 @@ section.banner img {
   height: auto;
 }
 
-/*------- home intro --------*/
-section.home-intro {
-  width: 962px;
+/*
+ * Home Intro
+ *****************************************************************************/
+.home-intro {
   padding: 20px 0 56px;
   margin: 0 auto;
   text-align: center;
-  background: url(images/home-intro-bg.png) no-repeat center bottom;
+  background: url("images/home-intro-bg.png") no-repeat center bottom;
 }
-section.home-intro h2 {
+.home-intro h2 {
   width: 100%;
   padding-bottom: 17px;
   font-size: 33px;
@@ -142,85 +300,63 @@ section.home-intro h2 {
   font-style: italic;
   font-weight: normal;
 }
-section.home-intro p {
+.home-intro p {
   width: 100%;
   padding-bottom: 9px;
   font-size: 22px;
   line-height: 26px;
-  color: #333;
+  color: #333333;
   font-family: "Crimson Text", serif;
 }
-section.home-intro p strong {
+.home-intro p strong {
   color: #7b2222;
   font-family: "Crimson Text", serif;
   font-weight: normal;
 }
 
-/*-----home-widget------*/
+/*
+ * Home Widget
+ *****************************************************************************/
 .home-widget {
-  width: 962px;
-  padding-bottom: 46px;
   margin: 25px auto 0;
-  text-align: left;
-  background: url(images/home-widget-bg-bottom.png) no-repeat center bottom;
 }
-.home-widget .inner {
-  overflow: hidden;
-}
-.home-widget .inner h3 {
+.home-widget h3 {
   padding-bottom: 14px;
   font-size: 20px;
   line-height: 26px;
-  color: #666;
+  color: #666666;
   font-weight: normal;
   text-transform: uppercase;
   font-family: "Crimson Text", serif;
-}
-.home-widget .links {
-  float: left;
-  width: 273px;
-  padding: 27px 16px 0 21px;
-  margin-right: 19px;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  background: url("images/story-bg.gif") top left repeat-x #ffffff;
 }
 .home-widget .links p {
   line-height: 22px;
   padding-bottom: 7px;
 }
 .home-widget .links ul {
-  width: 273px;
+  width: 100%;
   overflow: hidden;
-  border-top: 1px solid #DBDBDB;
+  border-top: 1px solid #ddd;
 }
 .home-widget .links ul li {
   width: 100%;
   float: left;
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid #ddd;
 }
 .home-widget .links ul li a {
   width: 100%;
   display: block;
   font-size: 14px;
   line-height: 35px;
-  color: #666;
+  color: #666666;
   text-indent: 26px;
-  background: url(images/bullet.gif) no-repeat 6px 12px;
+  background: url("images/bullet.gif") no-repeat 6px 12px;
 }
 .home-widget .links ul li a:hover {
   text-decoration: none;
   color: #7b2222;
   background-position: 6px -75px;
-  background-color: #F7F7F7;
-}
-.home-widget .about {
-  float: left;
-  width: 259px;
-  padding: 27px 20px 0;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  background: url("images/story-bg.gif") top left repeat-x #ffffff;
+  background-color: #f7f7f7;
 }
 .home-widget .about p {
   line-height: 22px;
@@ -230,15 +366,9 @@ section.home-intro p strong {
   color: #7b2222;
 }
 
-/*-----contact----*/
-.contact {
-  float: right;
-  width: 270px;
-  padding: 27px 19px 0 20px;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  background: url("images/story-bg.gif") top left repeat-x #ffffff;
-}
+/*
+ * Contact
+ *****************************************************************************/
 .contact p {
   line-height: 22px;
   padding-bottom: 7px;
@@ -252,94 +382,55 @@ section.home-intro p strong {
 .contact .contact-form input[type="email"],
 .contact .contact-form input[type="tel"],
 .contact .contact-form textarea {
-  width: 248px;
+  width: 91.8%;
   height: 36px;
-  padding: 0px 10px 0;
+  padding: 0 3.7% 0;
   margin-bottom: 5px;
   float: left;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dddddd;
   font-size: 14px;
   line-height: 22px;
-  color: #666;
+  color: #666666;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background: url(images/input-text-bg.gif) repeat-x;
+  background: url("images/input-text-bg.gif") repeat-x #ebebeb;
 }
 .contact .contact-form textarea {
   height: 93px;
   resize: none;
   padding-top: 7px;
-  background: #EBEBEB url(images/input-textarea-bg.gif) repeat-x;
+  background: url("images/input-textarea-bg.gif") repeat-x #ebebeb;
 }
 .contact .contact-form input[type="button"] {
-  width: 270px;
+  width: 100%;
   height: 38px;
+  text-indent: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
   border: 0;
-  text-indent: -1000px;
-  background: url("images/button-submit.gif");
+  background: #b00000;
+  background: -moz-linear-gradient(top, #b00000 0%, #7d2121 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b00000), color-stop(100%, #7d2121));
+  background: -webkit-linear-gradient(top, #b00000 0%, #7d2121 100%);
+  background: -o-linear-gradient(top, #b00000 0%, #7d2121 100%);
+  background: -ms-linear-gradient(top, #b00000 0%, #7d2121 100%);
+  background: linear-gradient(to bottom, #b00000 0%, #7d2121 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
 }
 .contact .notice {
-  width: 233px;
+  width: 86%;
+  min-height: 33px;
   padding-left: 37px;
   display: block;
   font-size: 11px;
   line-height: 17px;
-  background: url(images/lock.gif) no-repeat;
+  background: url("images/lock.gif") no-repeat;
 }
 
-/*----- page -sidebar------*/
-.page h3 {
-  padding-bottom: 14px;
-  font-size: 20px;
-  line-height: 26px;
-  color: #666;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-family: "Crimson Text", serif;
-}
-
-/*----- page ------*/
-.page {
-  width: 962px;
-  text-align: left;
-  margin: 33px auto 0;
-  padding-bottom: 26px;
-}
-.page .inner {
-  width: 100%;
-  overflow: hidden;
-}
-.page .story {
-  padding: 27px 2.08% 0;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  background: url("images/story-bg.gif") top left repeat-x #ffffff;
-}
-.page .story p {
-  line-height: 22px;
-  padding-bottom: 22px;
-}
-.page .story p strong {
-  color: #7b2222;
-}
-
-/*-----layout-sidebar------*/
-.layout-sidebar {
-  background: url(images/layout-sidebar-bg-bottom.png) no-repeat center bottom;
-}
-.layout-sidebar .story {
-  width: 589px;
-  float: left;
-}
-
-/*-----layout-single------*/
-.layout-single {
-  background: url(images/layout-single-bg-bottom.png) no-repeat center bottom;
-}
-.layout-single .story {
-  width: 95.73%;
-}
-
-/*-------footer--------*/
+/*
+ * Footer
+ *****************************************************************************/
 footer {
   width: 962px;
   padding: 29px 0;
@@ -347,12 +438,15 @@ footer {
   text-align: center;
   font-size: 13px;
   line-height: 24px;
-  color: #666;
-  background: url(images/footer-bg.gif) no-repeat center bottom;
+  color: #666666;
+  background: url("images/footer-bg.gif") no-repeat center bottom;
 }
 footer a {
   color: #666666;
   padding: 0 3px;
+}
+footer address {
+  font-style: normal;
 }
 footer ul {
   width: 100%;
@@ -360,6 +454,134 @@ footer ul {
 }
 footer ul li {
   display: inline;
+}
+
+/*
+ * Media Queries
+ *****************************************************************************/
+@media only screen and (min-width: 992px) {
+  header .show-menu-button {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 97%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+
+  header .show-menu-button {
+    display: block;
+    visibility: visible;
+  }
+  header .inner {
+    width: 100%;
+  }
+  header .nav {
+    display: none;
+    visibility: hidden;
+  }
+
+  .home-intro {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home-intro {
+    background-image: url("images/home-intro-bg-800.png");
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-intro {
+    background-image: url("images/home-intro-bg-767.png");
+  }
+
+  .col-onethird {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .col-onethird:last-child {
+    margin-bottom: 0;
+  }
+
+  header #logo {
+    left: 33%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  header #logo {
+    left: 31%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .content-box {
+    padding: 27px 3% 27px;
+  }
+
+  .col-full {
+    width: 93%;
+  }
+
+  .home-intro {
+    background-image: url("images/home-intro-bg-640.png");
+  }
+
+  header #logo {
+    left: 29%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  header #logo {
+    left: 27%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .home-intro {
+    background-image: url("images/home-intro-bg-480.png");
+  }
+
+  header #logo {
+    left: 24%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .container {
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .content-box {
+    padding: 27px 4% 27px;
+  }
+
+  .col-full {
+    width: 91%;
+  }
+
+  header #logo {
+    left: 23%;
+  }
+
+  .home-intro {
+    background-image: url("images/home-intro-bg-380.png");
+  }
+}
+@media only screen and (max-width: 320px) {
+  header #logo {
+    left: 17%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

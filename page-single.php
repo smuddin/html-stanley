@@ -7,9 +7,9 @@
     <!-- End of banner -->
 
 
-    <div class="page layout-single"><div class="inner">
+    <section class="container page"><div class="inner">
 
-        <div class="story">
+        <div class="content-box col-full"><article>
 
             <h3>About Stanley</h3>
             
@@ -34,9 +34,10 @@
             <p>Duis <strong>aute irure dolor</strong> in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong>
                 nisi ut aliquip ex ea commodo consequat.</p>
-        </div><!-- End of story -->
 
-    </div></div><!-- End of page -->
+        </article></div><!-- End of story -->
+
+    </div></section><!-- End of page -->
 
 
 <?php include_once('footer.php'); ?>

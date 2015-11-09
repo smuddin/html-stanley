@@ -2,21 +2,39 @@
 <html>
 <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
     <title>Stanley A. Schwartz</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--stylesheets-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
     <link href="style.css" rel="stylesheet" type="text/css" />
 
+    <!--scripts-->
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/menu_nav.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body>
+<div id="wrap"><div id="wrap-inner" >
 
-    <header><div class="inner">
+
+<header><div class="inner">
+
+    <nav>
+
+        <a href="javascript:void(0);" class="show-menu-button"></a>
 
         <a href="./" id="logo">
             <img src="images/logo.gif" alt="Stanley A. Schwartz" />
@@ -24,11 +42,11 @@
 
         <ul class="nav">
             <li>
-                <a href="page-single.php">About Stanley</a>
+                <a href="#">About Stanley</a>
                 <ul>
                     <li class="fstLi"><a href="#">About Stanley Link 1</a></li>
                     <li><a href="#">About Stanley Link 2</a></li>
-                    <li><a href="#">About Stanley Link 3</a></li>
+                    <a href="page-sidebar.php">contact&nbsp;stanley</a>          <li><a href="#">About Stanley Link 3</a></li>
                 </ul>
             </li>
             <li class="nav2">
@@ -42,15 +60,12 @@
                 </ul>
             </li>
             <li>
-                <a href="#">Legal Fees</a>
-                <ul>
-                    <li class="fstLi"><a href="#">Legal Fees Link 1</a></li>
-                    <li><a href="#">Legal Fees Link 2</a></li>
-                </ul>
+                <a href="page-single.php">Legal Fees</a>
             </li>
             <li>
-                <a href="page-sidebar.php">contact&nbsp;stanley</a>
+                <a href="page-sidebar.php">Contact Stanley</a>
             </li>
-        </ul><!-- End of nav -->
+        </ul>
+    </nav><!-- End of nav -->
 
-    </div></header><!-- End of header -->
+</div></header><!-- End of header -->
