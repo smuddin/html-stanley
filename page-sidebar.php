@@ -9,34 +9,37 @@
 
     <section class="container page"><div class="inner">
 
-        <article class="content-box col-main">
 
-            <h3>About Stanley</h3>
-            
-            <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
-            
-            <p>Ut enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi ut aliquip
-                ex ea commodo consequat. Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            
-            <p>Ut enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi ut aliquip
-                ex ea commodo consequat.</p>
-            
-            <p>Duis <strong>aute irure dolor</strong> in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi
-                ut aliquip ex ea commodo consequat.</p>
-            
-            <p>Duis <strong>aute irure dolor</strong> in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong>
-                nisi ut aliquip ex ea commodo consequat.</p>
+        <article class="col-main">
+            <div class="content-box">
 
+                <h3>About Stanley</h3>
+
+                <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+
+                <p>Ut enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi ut aliquip
+                    ex ea commodo consequat. Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <p>Ut enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi ut aliquip
+                    ex ea commodo consequat.</p>
+
+                <p>Duis <strong>aute irure dolor</strong> in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi
+                    ut aliquip ex ea commodo consequat.</p>
+
+                <p>Duis <strong>aute irure dolor</strong> in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong>
+                    nisi ut aliquip ex ea commodo consequat.</p>
+
+            </div>
         </article><!-- End of content-box -->
 
 
-        <aside class="content-box col-aside">
+        <aside class="col-aside">
 
-            <div class="contact">
+            <div class="contact content-box">
                 <h3>contact us now</h3>
                 <p>Please enter your details below and we will promtly return your inquiry:</p>
 

@@ -27,7 +27,7 @@
 </head>
 
 <body>
-<div id="wrap"><div id="wrap-inner" >
+<div id="sliding-menu-wrap"><div id="wrap"><div id="wrap-inner" >
 
 
 <header><div class="inner">
@@ -42,7 +42,7 @@
 
         <ul class="nav">
             <li>
-                <a href="#">About Stanley</a>
+                <a href="javascript:void(0);">About Stanley</a>
                 <ul>
                     <li class="fstLi"><a href="#">About Stanley Link 1</a></li>
                     <li><a href="#">About Stanley Link 2</a></li>
@@ -50,7 +50,7 @@
                 </ul>
             </li>
             <li class="nav2">
-                <a href="#">Practice Areas</a>
+                <a href="javascript:void(0);">Practice Areas</a>
                 <ul>
                     <li class="fstLi"><a href="#">Some Link 1</a></li>
                     <li><a href="#">Another Link 2</a></li>

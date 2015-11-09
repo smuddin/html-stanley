@@ -46,6 +46,7 @@ $(document).ready(function(){
 
         //Rem : Unecessary except for windows phone7.5 where div with lower z-index are clickable....
         slidingMenu.css("visibility","visible");
+        slidingMenu.width(menuWidth-1);
 
         adjustHeight();
         

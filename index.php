@@ -41,7 +41,7 @@
             </div>
 
         </div><!-- End of links -->
-        
+
         <div class="col-onethird">
 
             <div class="content-box about">
@@ -53,7 +53,7 @@
             </div>
 
         </div><!-- End of about -->
-        
+
         <div class="col-onethird">
 
             <div class="content-box contact">
