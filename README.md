@@ -1,4 +1,4 @@
-# HTML5+CSS3+SCSS Project
+# Sample HTML Project
 
 This project contains a HTML project to demonstrate the following features.
 
