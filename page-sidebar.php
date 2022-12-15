@@ -7,7 +7,7 @@
     <!-- End of banner -->
 
 
-    <section class="container page layout-sidebar"><div class="inner">
+    <section class="container page"><div class="inner">
 
 
         <article class="col-main">
@@ -28,10 +28,6 @@
                 <p>Duis <strong>aute irure dolor</strong> in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi
                     ut aliquip ex ea commodo consequat.</p>
-
-                <p>Duis <strong>aute irure dolor</strong> in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong>
-                    nisi ut aliquip ex ea commodo consequat.</p>
 
                 <p>Duis <strong>aute irure dolor</strong> in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla enim ad minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong>
