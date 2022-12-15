@@ -1,4 +1,4 @@
-<?php include_once('header.php'); ?>
+<?php include 'header.php'; ?>
 
 
     <div class="banner">
@@ -80,4 +80,4 @@
     </div></section><!-- End of container -->
 
 
-<?php include_once('footer.php'); ?>
+<?php include 'footer.php'; ?>
